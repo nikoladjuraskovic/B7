@@ -29,60 +29,49 @@
             </div>
             <div class="main">
 
+                <span id="logovanje">Možete se logovati sa sledećim nalozima</span>
 
-                <div class="loginDisplay">
+                <br />
+                <br />
 
+                Korisničko ime: Test
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                Korisničko ime: Test2
+                <br />
+                Lozinka: test123
 
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Lozinka: test2123
+                <br />                
+                <hr />
+                Unesite parametre za logovanje <span id="registrovanje">Registrujte se</span> ako nemate nalog
 
+                <fieldset>
+                <legend>Forma za logovanje</legend>
+            <br />
+            &nbsp;&nbsp;&nbsp;
+            <asp:Label ID="Label1" runat="server" Text="Korisnicko ime:"></asp:Label>
+                <br />
+                <br />
+&nbsp;&nbsp;&nbsp; <asp:TextBox ID="TextBox1" runat="server" Width="235px"></asp:TextBox>
+            <br />
+            <br />
+            &nbsp;&nbsp;&nbsp;
+            <asp:Label ID="Label2" runat="server" Text="Lozinka: "></asp:Label>
+                <br />
+                <br />
+&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="TextBox2" runat="server" TextMode="Password" Width="234px"></asp:TextBox>
+                <br />
+            <br />
+                </fieldset>
+            <br />
+            <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="Button1" runat="server" Text="Prijava" OnClick="Button1_Click"/>
+&nbsp;&nbsp;&nbsp;
+            <asp:Label ID="Label3" runat="server"></asp:Label>
 
-                    <h2>Log In</h2>
-                    <p>
-                        Please enter your username and password.
-        <asp:HyperLink ID="RegisterHyperLink" runat="server" EnableViewState="false">Register</asp:HyperLink>
-                        if you don't have an account.
-                    </p>
-
-
-
-
-
-                    <div class="accountInfo">
-                        <fieldset class="login">
-                            <legend>Account Information</legend>
-                            <p>
-                                <asp:Label ID="UserNameLabel" runat="server" AssociatedControlID="UserName">Username:</asp:Label>
-                                <asp:TextBox ID="UserName" runat="server" CssClass="textEntry"></asp:TextBox>
-
-                            </p>
-                            <p>
-                                <asp:Label ID="PasswordLabel" runat="server" AssociatedControlID="Password">Password:</asp:Label>
-                                <asp:TextBox ID="Password" runat="server" CssClass="passwordEntry" TextMode="Password"></asp:TextBox>
-
-                            </p>
-                            <p>
-                                <asp:CheckBox ID="RememberMe" runat="server" />
-                                <asp:Label ID="RememberMeLabel" runat="server" AssociatedControlID="RememberMe" CssClass="inline">Keep me logged in</asp:Label>
-                            </p>
-                        </fieldset>
-                        <p class="submitButton">
-                            <asp:Button ID="LoginButton" runat="server" CommandName="Login" Text="Log In" />
-                        </p>
-                    </div>
-
-
-
-
-                    <loggedintemplate>
-                        Dobrodošli na stranicu!
-                        Welcome <span class="bold">
-                            <asp:LoginName ID="HeadLoginName" runat="server" />
-                        </span>!
-                        [
-                            <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/" />
-                        ]
-                    </loggedintemplate>
-
-                </div>
 
 
 

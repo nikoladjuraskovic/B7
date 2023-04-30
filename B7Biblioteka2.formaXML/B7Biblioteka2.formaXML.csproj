@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="autor.aspx" />
+    <Content Include="bazaCreate.txt" />
     <Content Include="biblioteka.xml" />
     <Content Include="pocetna.aspx" />
     <Content Include="pregled.aspx" />

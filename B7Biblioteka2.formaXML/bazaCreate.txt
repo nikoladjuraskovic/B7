@@ -1,0 +1,11 @@
+﻿CREATE TABLE Korisnici (
+    ID int IDENTITY(1,1) primary key NOT NULL
+    KorisnickoIme varchar(255) NOT NULL,
+    Sifra varchar(255) NOT NULL,
+);
+
+Insert INTO Korisnici (KorisnickoIme, Sifra)
+VALUES ('Test', 'test123');
+
+Insert INTO Korisnici (KorisnickoIme, Sifra)
+VALUES ('Test2', 'test2123');

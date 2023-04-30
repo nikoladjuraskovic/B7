@@ -251,3 +251,13 @@ div.accountInfo {
     text-align: right;
     padding-right: 10px;
 }
+
+
+#logovanje {
+    font-weight: bold;
+}
+
+
+#registrovanje {
+    color: blue;
+}
