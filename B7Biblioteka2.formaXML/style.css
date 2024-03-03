@@ -261,3 +261,9 @@ div.accountInfo {
 #registrovanje {
     color: blue;
 }
+
+/*dodat css da lici na sliku zadatka*/
+
+#forma {
+    max-width: fit-content;
+}

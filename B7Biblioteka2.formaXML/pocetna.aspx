@@ -6,6 +6,7 @@
 <head runat="server">
     <title></title>
     <link href="style.css" rel="stylesheet" />
+    
 </head>
 <body>
     <form id="form1" runat="server">
@@ -46,7 +47,7 @@
                 <hr />
                 Unesite parametre za logovanje <span id="registrovanje">Registrujte se</span> ako nemate nalog
 
-                <fieldset>
+                <fieldset id="forma"> <!--u style.css na dnu dodat stil za id forma-->
                 <legend>Forma za logovanje</legend>
             <br />
             &nbsp;&nbsp;&nbsp;
