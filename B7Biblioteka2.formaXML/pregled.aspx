@@ -45,7 +45,7 @@
             
             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false">
                 <Columns>
-                    <asp:BoundField HeaderText="ISBN" DataField="isbn"></asp:BoundField>
+                    <asp:BoundField DataField="isbn"   HeaderText="ISBN"></asp:BoundField>
                     <asp:BoundField DataField="naslov" HeaderText="naslov"></asp:BoundField>
                     <asp:BoundField DataField="stanje" HeaderText="stanje"></asp:BoundField>
                     <asp:BoundField DataField="citano" HeaderText="citano"></asp:BoundField>

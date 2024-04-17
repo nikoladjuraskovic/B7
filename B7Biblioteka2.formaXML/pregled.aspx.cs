@@ -20,22 +20,22 @@ namespace B7Biblioteka2.formaXML
                 if(r.NodeType == XmlNodeType.Element && r.Name=="knjiga")
                 {
                     k = new Knjiga();
-                    k.ISBN = r.GetAttribute(0);
+                    k.isbn = r.GetAttribute(0);
                 }
                 if (r.NodeType == XmlNodeType.Element && r.Name == "naslov")
                 {
                     r.Read();
-                    k.Naslov = r.Value;
+                    k.naslov = r.Value;
                 }
                 if (r.NodeType == XmlNodeType.Element && r.Name == "stanje")
                 {
                     r.Read();
-                    k.Stanje = int.Parse(r.Value);
+                    k.stanje = int.Parse(r.Value);
                 }
                 if (r.NodeType == XmlNodeType.Element && r.Name == "citano")
                 {
                     r.Read();
-                    k.Citano = int.Parse(r.Value);
+                    k.citano = int.Parse(r.Value);
                 }
                 if (r.NodeType == XmlNodeType.EndElement && r.Name == "knjiga")
                     knjige.Add(k);
@@ -43,7 +43,7 @@ namespace B7Biblioteka2.formaXML
             }
             r.Close();
             knjige.Sort(delegate (Knjiga a,Knjiga b) {
-                return b.Citano.CompareTo(a.Citano);
+                return b.citano.CompareTo(a.citano);
             });
             GridView1.DataSource= knjige;
             GridView1.DataBind();

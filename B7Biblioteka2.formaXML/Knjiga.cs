@@ -10,37 +10,19 @@ namespace B7Biblioteka2.formaXML
 {
     public class Knjiga
     {
-        private string isbn;
-        private string naslov;
-        private int stanje;
-        private int citano;
-
-
-        
-        public string ISBN
-        {
-            get { return isbn; }
-            set { isbn = value; }   
-        }
-        public string Naslov
-        {
-            get { return naslov; }
-            set { naslov = value; }
-        }
-        
-        public int Stanje
-        {
-            get { return stanje; }
-            set { stanje = value; }
-        }
-
-        public int Citano
-        {
-            get { return citano; }
-            set { citano = value; }
-        }
+        public string isbn { get; set; }
+        public string naslov { get; set; }
+        public int stanje { get; set; }
+        public int citano { get; set; }
 
         public Knjiga() { }
 
+        public Knjiga(string isbn, string naslov, int stanje, int citano)
+        {
+            this.isbn = isbn;
+            this.naslov = naslov;
+            this.stanje = stanje;
+            this.citano = citano;
+        }
     }
 }
